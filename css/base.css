@@ -1,0 +1,37 @@
+/* estilos.css */
+
+/* Estilos para la barra de navegación */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+/* Estilos para la sección principal */
+header {
+    background-image: url('../img/imagen_principal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .btn-light {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+/* Estilos para el pie de
+::contentReference[oaicite:0]{index=0}
+ 
