@@ -4,66 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegio My Toys</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #003366; /* Azul institucional */
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #ffcc00; /* Amarillo institucional */
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: #003366;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            background-image: url('ruta/a/imagen_principal.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .content {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #cc0000; /* Rojo institucional */
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="ruta/a/logo.png" alt="Logo Colegio My Toys" style="max-width: 150px;">
-        <h1>Colegio My Toys</h1>
-    </header>
-    <nav>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#admisiones">Admisiones</a>
-        <a href="#noticias">Noticias</a>
-        <a href="#contacto">Contacto</a>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo Colegio My Toys" width="50" height="50">
+                Colegio My Toys
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#admisiones">Admisiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="hero">
-        <h2>Bienvenidos al Colegio My Toys</h2>
-        <p>Formando el futuro con pasión y dedicación.</p>
 
-::contentReference[oaicite:0]{index=0}
- 
+    <!-- Sección principal -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bienvenidos al Colegio My Toys</h1>
+            <p class="lead">Formando el futuro con pasión y dedicación.</p>
+            <a href="#admisiones" class="btn btn-lg btn-light">Conoce más</a>
+        </div>
+    </header>
+
+    <!-- Sección "Nosotros" -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Sobre Nosotros</h2>
+                    <p>El Colegio My Toys se dedica a brindar una educación integral, fomentando el desarrollo académico y personal de nuestros estudiantes.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/imagen_principal.jpg" alt="Imagen del colegio" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Admisiones" -->
+    <section id="admisiones" class="bg-light py-5">
+        <div class="container">
+            <h2>Proceso de Admisión</h2>
+            <p>Conoce los pasos para formar parte de nuestra comunidad educativa.</p>
+            <!-- Aquí puedes agregar más detalles sobre el proceso de admisión -->
+        </div>
+    </section>
+
+    <!-- Sección "Noticias" -->
+    <section id="noticias" class="py-5">
+        <div class="container">
+            <h2>Últimas Noticias</h2>
+            <!-- Aquí puedes agregar un carrusel o una lista de noticias recientes -->
+        </div>
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Colegio My Toys. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS y dependencias de Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace al archivo de scripts personalizado -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
