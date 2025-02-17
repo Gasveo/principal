@@ -1,37 +1,77 @@
-/* estilos.css */
-
-/* Estilos para la barra de navegación */
-.navbar-brand img {
-    margin-right: 10px;
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-.navbar-nav .nav-link {
+/* Navbar */
+.navbar {
+    background-color: #dc3545; /* Rojo */
+    padding: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
 }
 
-/* Estilos para la sección principal */
-header {
-    background-image: url('../img/imagen_principal.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.navbar a:hover {
+    text-decoration: underline;
 }
 
-header .btn-light {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para las secciones */
-section {
-    padding: 60px 0;
+/* Secciones */
+.section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-section h2 {
-    margin-bottom: 30px;
+.section h2 {
+    color: #007bff; /* Azul */
+    margin-bottom: 20px;
 }
 
-/* Estilos para el pie de
-::contentReference[oaicite:0]{index=0}
- 
+.section p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Botón */
+.btn-primary {
+    background-color: #ffc107; /* Amarillo */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
